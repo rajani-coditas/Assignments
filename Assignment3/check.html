@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/check.js"></script>
+</head>
+<body ng-app="myapp">
+	<div ng-controller="mycontrl">
+		<h3>Enter Items Here:</h3>
+		<p>
+			<input type="text" placeholder="enter items" ng-model="yourItem">
+			<button ng-click="addItems()">Add</button>
+		</p>
+			<ul>
+				<li ng-repeat="items in itemList" ng-class='{"task-completed":items.completed==true}'>
+					{{$index + 1}}<input type="checkbox" ng-model="items.completed" ng-disabled='items.completed'>
+					{{items.yourItem}}
+				</li>
+			</ul>
+	</div>
+</body>
+</html>

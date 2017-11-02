@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/ass2.js"></script>
+</head>
+<body ng-app="myapp">
+	<div ng-controller="mycntrl">
+		<h3 class="h3">Enter Your Details:</h3>
+		<p>
+			<input type="text" placeholder="enter Name" ng-model="yourName">
+			<input type="text" placeholder="enter Address" ng-model="youraddress">
+			<input type="text" placeholder="enter City" ng-model="yourcity">
+			<input type="text" placeholder="enter Contact no." ng-model="yourcontact">
+			<button ng-click="addressdetails()">Add</button>
+		</p>
+			<table border="1px"; padding="50px"; text-align="center";>
+				<tr class="heading">
+					<td>Sr. No.</td>
+					<td>Name</td>
+					<td>Address</td>
+					<td>City</td>
+					<td>ContactNo.</td>
+				</tr>
+				<tr ng-repeat="address in addresslist">
+							<td>
+								{{$index+1}}
+							</td>
+							<td>
+								{{address.name}}
+							</td>
+							<td>
+								{{address.address}}
+							</td>
+							<td>
+								{{address.city}}
+							</td>
+							<td>
+								{{address.contact}}
+							</td>
+				</tr>
+			</table>
+	</div>
+</body>
+</html>

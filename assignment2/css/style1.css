@@ -1,0 +1,15 @@
+body{
+	margin: 0;
+}
+.h3{
+	color: red;
+	font-family: sans-serif;
+}
+.heading{
+	color: blue;
+	font-family: serif;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+
