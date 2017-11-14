@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/ajax1.js"></script>
+</head>
+<body ng-app="myapp">
+	<div  ng-controller="mycntrl" >
+		<div class="completed">
+			<h3>COMPLETED TODO</h3>
+			<table>
+				<tr>
+					<th>ID</th>
+					<th></th>
+					<th>TITLE</th>
+				</tr>
+					<tr ng-repeat="completedTodo in completedTodolist | orderBy:id" ng-if="completedTodo.completed==true">
+						<td>{{completedTodo.id}}</td>
+						<td><input type="checkbox" ng-model="completedTodo.completed"></td>
+						<td>{{completedTodo.title}}</td>
+					</tr>	
+			</table>
+		</div>
+		<div class="incompleted">
+			<h3>INCOMPLETED TODO</h3>
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>CHECK</th>
+					<th>TITLE</th>
+				</tr>
+					<tr ng-repeat="incompletedTodo in completedTodolist | orderBy:id" ng-if="incompletedTodo.completed==false">
+						<td>{{incompletedTodo.id}}</td>
+						<td><input type="checkbox" ng-model="incompletedTodo.completed"></td>
+						<td>{{incompletedTodo.title}}</td>
+					</tr>	
+			</table>
+		</div>
+	</div>
+</body>
+</html>

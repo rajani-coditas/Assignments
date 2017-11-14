@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/user.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myapp">
+	<div ng-controller="userController" class="container">
+		<div class="userName">
+			<input type="text" ng-model="searchText">
+			<ul>
+				<li ng-repeat="name in userDetails | filter:{name:searchText}">
+					<a href="#" ng-click="showDetails($index)">
+						{{name.name}}
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="userDetails">
+			<ul>
+				<li>ID:{{userInfo.id}}</li>
+				<li>NAME: {{userInfo.name}}</li>
+				<li>USER NAME: {{userInfo.username}}</li>
+				<li>EMAIL ID: {{userInfo.email}}</li>
+				<li>ADDRESS:
+					<ul>
+						<li>STREET: {{userInfo.address.street}}</li>
+						<li>SUITE: {{userInfo.address.suite}}</li>
+						<li>CITY: {{userInfo.address.city}}</li>
+						<li>ZIPCODE:	{{userInfo.address.zipcode}}</li>
+					</ul>
+				</li>
+				<li>PHONE:{{userInfo.phone}}</li>
+				<li>WEBSITE:{{userInfo.website}}</li>
+				<li>COMPANY:
+					<ul>
+						<li>NAME:{{userInfo.company.name}}</li>
+						<li>CATCHPHRASE:{{userInfo.company.catchPhrase}}</li>
+						<li>BS:{{userInfo.company.bs}}</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

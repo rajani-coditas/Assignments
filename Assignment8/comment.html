@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/comment.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myapp" class="container">
+	<div ng-controller="mycontroller">
+		<div class="names">
+			<ul>
+				<li ng-repeat="name in commentList"><a href="#" ng-click="showComment($index)">{{name.name}}</a></li>
+			</ul>
+		</div>
+		<div class="details">
+			<h3>Details of Comment</h3>
+				{{commentData.id}}
+				{{commentData.name}}
+			<p>
+				{{commentData.email}}
+			</p>
+			<p>
+				{{commentData.body}}
+			</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

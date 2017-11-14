@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/studentinfo.css">
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/studentinfo.js"></script>
+</head>
+<body ng-app="myapp">
+	<div class="container" ng-controller="studentController">
+		<div class="sub-container">
+			<div class="enter-info">
+				<h2>Enter Student Info:</h2>
+				<table>
+					<tr>
+						<td>Enter Seat No:</td>
+						<td><input type="text" placeholder="Enter Seat No." ng-model="seatNo"></td>
+					</tr>
+					<tr>
+						<td>Enter First Name:</td>
+						<td>
+							<input type="text" placeholder="Enter First Name" ng-model="fstName" required>
+							<span ng-show="fstName.$touched && fstName.$invalid">required</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Enter Middle Name:</td>
+						<td><input type="text" placeholder="Enter Middle Name" ng-model="middleName"></td>
+					</tr>
+					<tr>
+						<td>Enter Last Name:</td>
+						<td><input type="text" placeholder="Enter Last Name" ng-model="lastName"></td>
+					</tr>
+					<tr>
+						<td>Enter Email ID:</td>
+						<td><input type="text" placeholder="Enter Email-id Name" ng-model="email">
+						</td>
+					</tr>
+					<tr>
+						<td>Subject Marks:</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<ul class="sub-details">
+								<li>Maths:<input type="text" placeholder="Enter Maths marks" ng-model="subMaths"></li>
+								<li>English:<input type="text" placeholder="Enter Englidh marks" ng-model="subEng"></li>
+								<li>Marathi:<input type="text" placeholder="Enter Marathi marks" ng-model="subMarathi"></li>
+								<li>Science:<input type="text" placeholder="Enter Science marks" ng-model="subSci"></li>
+								<li>Hindi:<input type="text" placeholder="Enter Hindi marks" ng-model="subHindi"></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button class="submit" ng-click="submitDetails()">Submit</button></td>
+					</tr>
+				</table>
+			</div>
+			<div class="detail-info">
+				SEARCH:<input type="text" placeholder="search" ng-model="searchText">
+				<p><h2>STUDENT INFORMATION:</h2></P>
+				<table border="1px" text-align="center">
+					<tr>
+						<th>Sr.No.</th>
+						<th>Seat No.</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Maths</th>
+						<th>English</th>
+						<th>Marathi</th>
+						<th>Science</th>
+						<th>Hindi</th>
+						<th>Total</th>
+					</tr>
+					<tr ng-repeat="student in studentDetails|filter:{seatNo:searchText}" ng-class='{"task-completed":invalidData.$valid==false}'>
+						<td>{{$index+1}}</td>
+						<td>{{student.seatNo}}</td>
+						<td>{{student.fullName}}</td>
+						<td>{{student.email|lowercase}}</td>
+						<td>{{student.submaths}}</td>
+						<td>{{student.subEng}}</td>
+						<td>{{student.subMarathi}}</td>
+						<td>{{student.subSci}}</td>
+						<td>{{student.subHindi}}</td>
+						<td>{{student.marksTotal}}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

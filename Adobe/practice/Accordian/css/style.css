@@ -1,0 +1,28 @@
+.container{
+	width: 500px;
+	height: 500px;
+	padding: 10px;
+	border:1px solid;
+	margin: 0 auto;
+}
+.accordian{
+	border: 1px solid;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 10px;
+}
+.section-head{
+	background-color: #cccccc;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 5px;
+}
+.section{
+	padding: 10px;
+	display: none;
+}
+.section-head a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}

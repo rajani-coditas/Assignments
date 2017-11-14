@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+}
+.container{
+	width: 1000px; 
+	margin: 0 auto;
+}
+.input-data{
+	width: 580px;
+	border:1px solid;
+	padding: 10px;
+	margin: 10px;
+}
+.show-data{
+	width: 480px;
+	border:1px solid;
+	padding: 10px;
+	margin: 10px;
+}

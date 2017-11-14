@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myapp">
+	<div ng-controller="mycontroller">
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>TITLE</th>
+			</tr>
+			<tr ng-repeat="todo in todoList">
+				<td>{{todo.id}}</td>
+				<td>{{todo.title}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

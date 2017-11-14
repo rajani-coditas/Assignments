@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	border:1px solid;
+}
+.userName{
+	width: 299px;
+	float: left;
+}
+.userDetails{
+	width: 860px;
+	float: right;
+	padding: 20px;
+	border-left: 1px solid;
+}
+.clear{
+	clear: both;
+}
+.userDetails ul li{
+	list-style: none;
+}
+h4{
+	padding: 0;
+}

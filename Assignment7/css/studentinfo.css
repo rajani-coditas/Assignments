@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+}
+.container{
+	width: 1200px;
+}
+.sub-container{
+	width: 1199px;
+	margin: 0 auto;
+}
+.search{
+	padding: 10px;
+}
+.enter-info{
+	width: 579px;
+	float: left;
+	border-right: 1px solid;
+}
+.submit{
+	padding: 5px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+}
+.detail-info{
+	width: 589px;
+	float: right;
+}
+.sub-details li{
+	padding: 10px 5px;
+}
+table, tr, td{
+	padding: 10px 5px;
+	font-family: sans-serif;
+	text-align: center;
+}
