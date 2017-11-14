@@ -103,3 +103,9 @@ body{
 	width: 940px;
 	margin: 70px auto;
 }
+.content-left{
+	float: left;
+}
+.content-right{
+	float: right;
+}
