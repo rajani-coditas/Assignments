@@ -3,7 +3,7 @@ $("document").ready(function(){
 	$(".section-head a").click(function(){
 		$(this).parent().next().slideDown();
 		$(this).bind("click",function(){
-			$(".section").slideUp();
+			$(this).parent().next().slideUp();
 		})
 	})
 });
