@@ -71,6 +71,7 @@
 						<th>Science</th>
 						<th>Hindi</th>
 						<th>Total</th>
+						<th>Per</th>
 					</tr>
 					<tr ng-repeat="student in studentDetails|filter:{seatNo:searchText}" ng-class='{"task-completed":invalidData.$valid==false}'>
 						<td>{{$index+1}}</td>

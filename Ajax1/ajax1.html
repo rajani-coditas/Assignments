@@ -21,6 +21,10 @@
 						<td>{{completedTodo.title}}</td>
 					</tr>	
 			</table>
+			<input type="checkbox" ng-model="enableDisableButton">Disable Button
+<button ng-disabled="enableDisableButton">Click Me!</button>
+<input type="checkbox" ng-model="showHide1">Show Button
+<button ng-show="showHide1">Click Me!</button>
 		</div>
 		<div class="incompleted">
 			<h3>INCOMPLETED TODO</h3>
@@ -36,6 +40,9 @@
 						<td>{{incompletedTodo.title}}</td>
 					</tr>	
 			</table>
+			<p ng-if='clickCounter % 2 == 0'>hi</p></td>
+<button ng-click="clickCounter = clickCounter + 1">Click Me!</button>
+			
 		</div>
 	</div>
 </body>
