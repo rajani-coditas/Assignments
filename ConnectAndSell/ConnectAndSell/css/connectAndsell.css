@@ -1,8 +1,5 @@
 .sales-acceleration-solution-wraper{
-	width: 100%;
 	background-color:#f5f5f5;
-	height: 651px
-
 }
 .sales-acceleration-solution{
 	font-family: sans-serif;
@@ -10,12 +7,10 @@
 	font-size: 34px;
 	font-weight: 400;
 	text-align: center;
-	padding: 30px 0;
+	padding-bottom: : 30px;
 }
 .sales-acceleration-solution-content{
-	width: 1170px;
-	margin: 0 auto;
-	margin-top: -40px;
+	/*margin-top: -40px;*/
 	padding: 20px 0;
 }
 
@@ -26,6 +21,7 @@
 	height: 386px;
 	background-color: #ffffff;
 	text-align: center;
+	margin: 0 auto;
 }
 .sales-acceleration-title{
 	font-weight: 500;
@@ -60,18 +56,9 @@
 .managed-appointment-content{
 	padding: 10px;
 }
-.acceleration-appointment-setting{
-	width: 1170px;
-	margin: 0 auto;
-}
-.tony-hushes{
-	height: 601px;
-}
+
 .Sales-acceleration-blog{
-	margin-top: -120px;
-	width: 100%;
 	background-color: #f5f5f5;
-	height: 886px;
 	padding: 80px 0;
 }
 .our-sales-acceleration-heading{
@@ -81,8 +68,6 @@
 	padding-bottom: 30px;
 }
 .our-sales-acceleration-content{
-	width: 1170px;
-	margin: 0 auto;
 	padding: 40px 0;
 	text-align: center;
 	padding: 40px 0;
@@ -91,17 +76,37 @@
 	border-radius: 4px;
 	background-color:  #ffffff;
 	box-shadow: -10px 17px 24px 0px rgba(35, 33, 33, 0.1);
-	width: 340px;
 	height: 521px;
+	margin: 0 auto;
 }
 .sales-acceleration-images{
 	padding: 40px 0;
 }
+.tony-hushes{
+	background-color: #000000;
+	padding: 30px;
+}
+.author-statement{
+	font-size: 36px;
+	font-weight: 400;
+	color: #ffffff;
+	padding: 20px 0;
+}
+.tony-hushes-details{
+	padding: 40px 0;
+}
+.tony1{
+	display: none;
+}
+.author-name{
+	font-size: 22px;
+	font-weight: 300;
+	text-align: left;
+	color: #a4a3a3;
+}
 .rquest-demo-blog{
-	width: 100%;
 	background-color: #ed1c24;
 	height: 751px;
-	border-bottom-radius: 40px;
 }
 .chris-bell-image-details{
 	text-align: left;
@@ -213,13 +218,11 @@
 	height: 141px;
 }
 .honors-images{
-	width: 1170px;
 	margin: 8px auto 0 auto;
 	padding: 0 20px;
 }
 .sales-hack-blog{
 	border: 1px solid #d6d6d6;
-	width: 1170px;
 	height: 231px;
 	margin: 80px auto;
 	padding: 25px 50px;
@@ -251,4 +254,45 @@
 }
 .btn-get-it-now{
 	margin: 30px 40px;
+}
+.acceleration-appointment-setting{
+	padding-bottom: 80px;
+}
+@media (max-width: 1200px) and (min-width: 959px){
+	.reset-container-width .container{
+		width: 940px
+	}
+}
+@media (max-width: 768px){
+	.development-acceleration{
+		margin-bottom: 30px;
+	}
+	.acceleration-appointment-setting{
+		padding-bottom: 50px;
+	}
+	.acceleration-details{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 768px){
+	.acceleration-details{
+		width: 340px;
+	}
+}
+@media(max-width: 768px){
+	.tony1{
+		display: block;
+	}
+}
+@media(max-width: 768px){
+	.author-statement{
+		font-size: 14px;
+		padding: 0;
+		font-weight: 300;
+	}
+}
+@media(max-width: 768px){
+	.tony2{
+		display: none;
+	}
 }
