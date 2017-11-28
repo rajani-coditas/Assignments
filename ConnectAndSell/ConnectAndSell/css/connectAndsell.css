@@ -105,12 +105,6 @@
 	text-align: left;
 	color: #a4a3a3;
 }
-.author-name .author-pic{
-	display: none;
-    position: relative;
-    top: -6px;
-    border-radius: 50%;
-}
 .rquest-demo-blog{
 	background-color: #ed1c24;
 }
@@ -161,10 +155,7 @@
 }
 .request-demo-content{
 	text-align: left;
-    padding: 30px 0;
-    background: #ed0e11 no-repeat url(../images/arc-reverse.jpg) center bottom;
-    padding-bottom: 150px;
-    background-size: 100% auto;
+	padding: 30px 0;
 }
 .not-your-father{
 	font-weight: 400;
@@ -178,29 +169,33 @@
 	font-weight: 400;
 	font-size: 21px;
 	text-align: left;
+	margin-bottom: 20px;
 }
 .request-demo-form{
 	background-color: #ffffff;
 	padding: 20px;
+	text-align: center;
 }
 .request-demo-form .input-name{
-	border:1px solid #d6d6d6;
 	background-color:  #ffffff;
-	width: 48%;
-	height: 57px;
-	padding: 22px 16px;
-	color: #ccc;
+	width: 45%;
+	padding: 15px 16px;
+	color: #cccccc;
 }
-.request-demo-form .input-last{
+.input-first{
+	float: left;
+}
+.input-last{
 	float: right;
 }
-.request-demo-form .input-business-email{
+
+.input-business-email{
 	width: 100%;
 	height: 57px;
 	border: 1px solid #d6d6d6;
 	margin-top: 20px;
 }
-.request-demo-form .btn-request-demo{
+.btn-request-demo{
 	width: 100%;
 	height: 73px;
 	background-color: #ed1c24;
@@ -222,7 +217,6 @@
 	border: 1px solid #d6d6d6;
 	margin: 80px 0;
 	padding: 30px 0;
-	text-align: center;
 }
 .get-free-book{
 	font-size: 22px;
@@ -247,27 +241,15 @@
 	padding: 20px;
 	line-height: 18px;
 	width: 200px;
-	/*margin-top: 30px;*/
+	margin-top: 30px;
 }
-.btn-get-it-now{
-	/*margin: 30px 40px;*/
-	text-align: left;
-}
+
 .acceleration-appointment-setting{
 	padding-bottom: 80px;
 }
 @media (max-width: 1200px) and (min-width: 959px){
 	.reset-container-width .container{
 		width: 940px
-	}
-
-}
-@media (max-width: 959px){
-	.request-demo-form .input-name{
-		width: 100%;
-	}
-	.request-demo-form .input-last{
-		float: left;
 	}
 }
 @media (max-width: 768px){
@@ -311,28 +293,22 @@
 	}
 	.input-first{
 		margin-left: 0;
+		margin-top: 20px;
 	}
 	.input-last{
 		margin: 20px 0 0 0;
 	}
 	.request-demo-form{
 		padding-top: 20px;
-		margin-left: 30px;
 		text-align: center;
 	}
-	.tony-hushes-image-block{
+	.tony1{
+		display: block;
+	}
+	.tony2{
 		display: none;
 	}
-	.author-name .author-pic{
-		display: inline-block;
-	}
-	.btn-get-it-now{
-		text-align: center;
-	}
-	.btn-get-it-now .get-it{
-		margin-top: 30px;
-	}
-	.request-demo-form{
-		margin-top: 20px;
+	.get-it{
+		margin-top: 0px;
 	}
 }
