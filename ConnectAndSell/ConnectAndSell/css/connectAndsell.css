@@ -87,7 +87,7 @@
 	padding-bottom: 80px;
 }
 .tony-hushes{
-	background-image: url("../images/CnSBackground.jpg");
+	background-image: url("https://connectandsell.com/wp-content/uploads/2017/11/CnSBackground.jpg");
 	padding: 30px 0;
 }
 .author-statement{
@@ -187,7 +187,7 @@
 .request-demo-content{
 	text-align: left;
 	padding: 50px 0;
-	background: #ef1e23 no-repeat url(../images/arc-reverse.jpg) center bottom;
+	background: #ef1e23 no-repeat url(https://connectandsell.com/wp-content/uploads/2017/11/arc-reverse.jpg) center bottom;
     padding-bottom: 150px;
     background-size: 100% auto;
 }
@@ -325,6 +325,13 @@ body.content-full-screen #content-wrap{
 	margin-top: 30px;
 	border-radius: 3px;
 }
+.reset-container-width{
+	margin-top: -10px;
+}
+.custom-home-page .navbar.navbar-inverse{
+	top:0px;
+}
+
 @media (max-width: 1200px) and (min-width: 959px){
 	.reset-container-width .container{
 		width: 940px
@@ -337,6 +344,9 @@ body.content-full-screen #content-wrap{
 	}
 }
 @media (max-width: 768px){
+	.request-demo-heading{
+		font-size: 38px;
+	}
 	.development-acceleration{
 		margin-bottom: 30px;
 	}
@@ -420,9 +430,7 @@ body.content-full-screen #content-wrap{
 	.btn-request-demo{
 		font-size: 17px;
 	}
-	.reset-container-width{
-		margin-top: -10px;
-	}
+	
 	.reset-container-width .container{
 		width: 100%
 	}
@@ -449,12 +457,15 @@ body.content-full-screen #content-wrap{
 		padding: 40px 0;
 	}
 	.honors-images{
-		padding: 0;
+		/*padding: 0;*/
 	}
 }
 @media (max-width: 480px){
 	.acceleration-details{
 		width: auto;
+	}
+	.request-demo-heading{
+		font-size: 32px;
 	}
 }
 
