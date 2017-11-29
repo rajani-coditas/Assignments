@@ -448,6 +448,9 @@ body.content-full-screen #content-wrap{
 	.acceleration-appointment-setting{
 		padding: 40px 0;
 	}
+	.honors-images{
+		padding: 0;
+	}
 }
 @media (max-width: 480px){
 	.acceleration-details{
