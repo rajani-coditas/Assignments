@@ -400,6 +400,18 @@ body.content-full-screen #content-wrap{
 	    left: -20%;
 	    top: -25px;
 	}
+	.container-boot > .navbar-header{
+		width: 100%;
+	}
+	#myNavbar.navbar-collapse{
+		display: none !important;
+	}
+	.container-boot > .navbar-header > .navbar-toggle{
+		display: block;
+	}
+	.custom-home-page .navbar.navbar-inverse{
+		padding-top: 0 !important;
+	}
 }
 
 
