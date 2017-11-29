@@ -21,10 +21,13 @@
 	margin: 0 auto;
 }
 .sales-acceleration-title{
+	padding: 20px;
+}
+.sales-acceleration-title a{
+	text-decoration: none;
 	font-weight: 500;
 	font-size: 22px;
 	color: #211e1e;
-	padding: 20px;
 }
 .sales-acceleration-content{
 	font-size: 18px;
@@ -35,9 +38,13 @@
 }
 .acceleration-video-intro{
 	padding: 5px 20px;
+	font-size: 16px;
+	font-weight: 500;
 }
 .playicon{
-	padding: 0 9px;
+	padding-right: 6px;
+	position: relative;
+	top: -1px;
 }
 .request-demo{
 	padding: 20px 10px;
@@ -57,11 +64,16 @@
 	background-color: #f5f5f5;
 }
 .our-sales-acceleration-heading{
-	font-size: 36px;
-	font-weight: 400;
-	color: #211e1e;
+	
 	padding: 80px 0;
 }
+.our-sales-acceleration-heading a{
+	text-decoration: none;
+	color: #211e1e;
+	font-size: 36px;
+	font-weight: 400;	
+}
+
 .our-sales-acceleration-content{
 	text-align: center;
 }
@@ -88,9 +100,9 @@
 .tony-hushes-details{
 	padding: 40px 0;
 }
-.tony1{
+/*.tony1{
 	display: none;
-}
+}*/
 .top-service-providers{
 	text-align: center;
 }
@@ -99,6 +111,12 @@
 	font-weight: 300;
 	text-align: left;
 	color: #a4a3a3;
+}
+.author-name img{
+	display: none;
+	height: 50px;
+	width: 50px;
+	margin-right: 5px;
 }
 .rquest-demo-blog{
 	background-color: #ed1c24;
@@ -164,7 +182,7 @@
 .work-with-companies{
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 21px;
+	font-size: 20px;
 	text-align: left;
 	margin-bottom: 20px;
 }
@@ -177,13 +195,16 @@
 	background-color:  #ffffff;
 	width: 48%;
 	padding: 15px 16px;
-	color: #cccccc;
 }
 .input-first{
 	float: left;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
 }
 .input-last{
 	float: right;
+	border-radius: 3px;
+	border: 1px solid #d6d6d6;
 }
 
 .input-business-email{
@@ -191,6 +212,7 @@
 	height: 57px;
 	border: 1px solid #d6d6d6;
 	margin-top: 20px;
+	border-radius: 3px;
 }
 .btn-request-demo{
 	width: 100%;
@@ -202,6 +224,7 @@
 	font-size: 22px;
 	text-align: center;
 	margin-top: 30px;
+	border-radius: 3px;
 }
 .honors-blog{
 	padding-top: 80px;
@@ -214,6 +237,7 @@
 	border: 1px solid #d6d6d6;
 	margin: 80px 0;
 	padding: 30px 0;
+	border-radius: 2px;
 }
 .get-free-book{
 	font-size: 22px;
@@ -240,6 +264,7 @@
 	line-height: 18px;
 	width: 200px;
 	margin-top: 30px;
+	border-radius: 3px;
 }
 .btn-get-it-now{
 	padding-top: 20px;
@@ -247,12 +272,16 @@
 .acceleration-appointment-setting{
 	padding: 80px 0;
 }
-.center-row-inner{
+.footer-builder .center-row-inner{
 	margin-bottom: 80px;
 }
 .getsocial{
 	color: #ed1c24;
 	font-size: 18px;
+}
+.footer-background{
+	background-color: #000000;
+	width: 100%;
 }
 @media (max-width: 1200px) and (min-width: 959px){
 	.reset-container-width .container{
@@ -269,9 +298,9 @@
 	.acceleration-details{
 		margin-bottom: 30px;
 	}
-	.acceleration-details{
+	/*.acceleration-details{
 		width: 340px;
-	}
+	}*/
 	.author-statement{
 		font-size: 32px;
 		padding: 10px 0px;
@@ -284,9 +313,9 @@
 	}
 	.request-demo-heading{
 		font-size: 30px;
-		padding: 10px 0px;
-		font-weight: 400;
-		padding-top: 10px;
+	    padding: 0 0 10px 0;
+	    font-weight: 400;
+	    margin-top: -10px;
 	}
 	.not-your-father{
 		font-weight: 300;
@@ -309,13 +338,46 @@
 		padding-top: 20px;
 		text-align: center;
 	}
-	.tony1{
-		display: block;
+	.get-it{
+		margin-top: 0px;
+	}
+	.series-content{
+		height: 135px;
+	}
+}
+
+
+@media (max-width: 767px){
+	.author-name img{
+		display: inline-block;
 	}
 	.tony2{
 		display: none;
 	}
-	.get-it{
-		margin-top: 0px;
+	.acceleration-details{
+		width: 480px;
+	}
+	.sales-hack{
+		text-align: center;
+		padding: 20px;
+	}
+	.service-provider{
+		margin-bottom: 30px;
+	}
+	.request-demo-form .input-name{
+		width: 100%;
+	}
+	.btn-request-demo{
+		font-size: 17px;
+	}
+}
+@media (max-width: 480px){
+	.acceleration-details{
+		width: 300px;
+	}
+}
+@media (max-width: 958px){
+	.series-content{
+		height: 120px;
 	}
 }
