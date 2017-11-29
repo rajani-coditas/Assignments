@@ -33,6 +33,7 @@
 	text-align: center;
 	color: #211e1e;
 	padding: 20px;
+	height: 160px;
 }
 .acceleration-video-intro a{
 	text-decoration: none;
@@ -41,7 +42,7 @@
 	color: #ffffff;
 }
 .playicon{
-	padding-right: 10px;
+	padding-right: 5px;
 	position: relative;
 	top: -1px;
 }
@@ -122,6 +123,23 @@
 .chris-bell-image-details{
 	text-align: left;
 	padding: 20px 30px;
+}
+.chris-bell-image-details ul{
+	margin-left: 13px;
+	list-style: none;
+}
+.chris-bell-image-details ul li{
+	position: relative;
+}
+.chris-bell-image-details ul li:before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #000;
+    left: -10px;
+    top: 10px;
+    border-radius: 2px;
 }
 .series{
 	font-size: 22px;
@@ -254,19 +272,6 @@
 	text-align: left;
 	color: #211e1e;
 }
-.get-it{
-	background-color: #ed1c24;
-	box-shadow: -3px 2px 10px 0px rgba(237, 28, 36, 0.24);
-	text-align: center;
-	font-weight: 700;
-	font-size: 20px;
-	color: #ffffff;
-	padding: 20px;
-	line-height: 18px;
-	width: 200px;
-	margin-top: 30px;
-	border-radius: 3px;
-}
 .btn-get-it-now{
 	padding-top: 20px;
 }
@@ -284,9 +289,51 @@
 	background-color: #000000;
 	width: 100%;
 }
+.chris-bell-image-details ul{
+	display: inline-block;
+}
+.development-acceleration .btn-video-intro,
+.btn-get-it-now .get-it{
+    display: inline-block;
+    background: #ed2024;
+    color: #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 10px 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.development-acceleration .btn-video-intro:hover,
+.btn-get-it-now .get-it:hover{
+	text-decoration: none;
+	background: #cd1b1f;
+}
+body.content-full-screen #content-wrap{
+	padding: 0;
+}
+.btn-get-it-now  .get-it{
+	background-color: #ed1c24;
+	box-shadow: -3px 2px 10px 0px rgba(237, 28, 36, 0.24);
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 20px;
+	line-height: 18px;
+	width: 200px;
+	margin-top: 30px;
+	border-radius: 3px;
+}
 @media (max-width: 1200px) and (min-width: 959px){
 	.reset-container-width .container{
 		width: 940px
+	}
+	.series-content{
+		height: 100px
+	}
+	.chris-bell-image-details ul{
+		display: block;
 	}
 }
 @media (max-width: 768px){
@@ -324,7 +371,7 @@
 		padding-top: 20px;
 		text-align: center;
 	}
-	.get-it{
+	.btn-get-it-now  .get-it{
 		margin-top: 0px;
 	}
 	.series-content{
@@ -372,6 +419,9 @@
 	}
 	.btn-request-demo{
 		font-size: 17px;
+	}
+	.reset-container-width{
+		margin-top: -10px;
 	}
 	.reset-container-width .container{
 		width: 100%
