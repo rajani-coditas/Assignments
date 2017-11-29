@@ -22,13 +22,11 @@
 }
 .sales-acceleration-title{
 	padding: 20px;
-}
-.sales-acceleration-title a{
-	text-decoration: none;
 	font-weight: 500;
 	font-size: 22px;
 	color: #211e1e;
 }
+
 .sales-acceleration-content{
 	font-size: 18px;
 	font-weight: 300;
@@ -36,13 +34,14 @@
 	color: #211e1e;
 	padding: 20px;
 }
-.acceleration-video-intro{
-	padding: 5px 20px;
-	font-size: 16px;
-	font-weight: 500;
+.acceleration-video-intro a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
 }
 .playicon{
-	padding-right: 6px;
+	padding-right: 10px;
 	position: relative;
 	top: -1px;
 }
@@ -57,14 +56,13 @@
 	text-decoration: underline;
 }
 .managed-appointment-content{
-	padding: 10px;
+	padding-bottom: 40px;
 }
 
 .Sales-acceleration-blog{
 	background-color: #f5f5f5;
 }
 .our-sales-acceleration-heading{
-	
 	padding: 80px 0;
 }
 .our-sales-acceleration-heading a{
@@ -85,7 +83,7 @@
 	
 }
 .sales-acceleration-images{
-	padding-bottom: 40px 0;
+	padding-bottom: 80px;
 }
 .tony-hushes{
 	background-image: url("../images/CnSBackground.jpg");
@@ -145,6 +143,7 @@
 .slider{
 	text-align: center;
 	padding: 80px 0;
+	display: none;
 }
 .slider .slider1{
 	cursor: pointer;
@@ -159,11 +158,13 @@
 	background-color: #ed1c24;
 }
 .request-demo-heading{
-	font-size: 54px;
+	font-size: 56px;
 	font-weight: 700;
 	color: #ffffff;
 	text-align: left;
-	padding: 20px 0;
+	/*padding: 20px 0;*/
+    padding: 0 0 10px 0;
+    margin-top: -15px;
 }
 .request-demo-content{
 	text-align: left;
@@ -234,10 +235,10 @@
 	padding: 0 20px;
 }
 .sales-hack{
-	border: 1px solid #d6d6d6;
-	margin: 80px 0;
-	padding: 30px 0;
-	border-radius: 2px;
+    border: 1px solid #ccc;
+    margin: 80px 0;
+    padding: 30px 0;
+    border-radius: 5px;
 }
 .get-free-book{
 	font-size: 22px;
@@ -311,22 +312,7 @@
 		font-size: 22px;
 		padding: 5px 0;
 	}
-	.request-demo-heading{
-		font-size: 30px;
-	    padding: 0 0 10px 0;
-	    font-weight: 400;
-	    margin-top: -10px;
-	}
-	.not-your-father{
-		font-weight: 300;
-		font-size: 14px;
-		padding: 5px 0;
-	}
-	.work-with-companies{
-		font-size: 18px;
-		font-weight: 400;
-		padding: 5px 0;
-	}
+	
 	.input-first{
 		margin-left: 0;
 		margin-top: 20px;
@@ -344,10 +330,26 @@
 	.series-content{
 		height: 135px;
 	}
+	.tony-hushes{
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+	.tony-hushes-details{
+		padding-bottom: 0
+	}
+	.tony2{
+	    width: 150%;
+	    position: relative;
+	    left: -20%;
+	    top: -25px;
+	}
 }
 
 
 @media (max-width: 767px){
+	.author-name{
+		margin: 10px 0 30px 0;
+	}
 	.author-name img{
 		display: inline-block;
 	}
@@ -360,6 +362,7 @@
 	.sales-hack{
 		text-align: center;
 		padding: 20px;
+		margin-top: 40px;
 	}
 	.service-provider{
 		margin-bottom: 30px;
@@ -370,12 +373,38 @@
 	.btn-request-demo{
 		font-size: 17px;
 	}
+	.reset-container-width .container{
+		width: 100%
+	}
+	.development-acceleration{
+		width: auto;
+		height: auto;
+	}
+	.managed-appointment{
+		margin-bottom: 40px;
+	}
+	.honors-blog{
+		padding-top: 40px;
+	}
+	.sales-acceleration-images{
+		padding-bottom: 40px;
+	}
+	.our-sales-acceleration-heading{
+		padding: 40px 0;
+	}
+	.sales-acceleration-solution-wraper{
+		padding-top: 40px;
+	}
+	.acceleration-appointment-setting{
+		padding: 40px 0;
+	}
 }
 @media (max-width: 480px){
 	.acceleration-details{
-		width: 300px;
+		width: auto;
 	}
 }
+
 @media (max-width: 958px){
 	.series-content{
 		height: 120px;
